@@ -1,0 +1,92 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+	<script>
+	function openKota(namakota) {
+	 var i;
+	 var x = document.getElementsByClassName("kota");
+	 for (i = 0; i < x.length; i++) {
+	 x[i].style.display = "none"; 
+	 }
+	 document.getElementById(namakota).style.display = "block"; 
+	}
+	</script>
+	<div class="w3-container" style="background-image: url('images/img_snowtops.jpg'); color: black;"> 
+		<h2>Membuat Menu Tab dan Link</h2>
+		<p>Click Pada Menu Dibawah</p>
+	</div>
+	
+	<div class="w3-bar w3-orange">
+		<button class="w3-bar-item w3-button" onclick="openKota('Welcome')">About</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Top')">Top</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Bottom')">Bottom</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Right')">Right</button>
+		
+		<div class='w3-dropdown-hover'>
+			<button class='w3-button'>Animasi </button>
+				<div class='w3-dropdown-content w3-bar-block w3-card-4'>
+				<button class="w3-bar-item w3-button" onclick="openKota('Left')">Left</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Opacity')">Opacity</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Zoom')">Zoom</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Fading')">Fading<button>
+				</div>
+		</div>
+	</div>
+	
+	<div id="Welcome" class="w3-container kota" style="background-image: url('images/bg.jpg'); style="display:none">
+		<center>
+		<p>
+		<h2> Welcome </h2> 
+		<hr>
+		<h1>Dzaky Farras Fauzan</h1>
+		<h1>10122024</h1>
+		<h1>IF-1</h1>
+	</div>
+	
+	<div id="Top" class="w3-container kota w3-animate-top" style="display:none">
+		<h2>Mobile Legends Bang Bang</h2>
+		<img src='ml.jpg'>
+		<p>Mobile Legends: Bang Bang adalah game arena pertempuran online multipemain seluler yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan ByteDance. </p>
+	</div>
+	
+	<div id="Bottom" class="w3-container kota w3-animate-bottom" style="display:none">
+		<h2>Apex</h2>
+		<img src='apex.jpg'>
+		<p>Apex Legends adalah permainan battle royale free-to-play yang dikembangkan oleh Respawn Entertainment dan diterbitkan oleh Electronic Arts. Permainan ini berada di alam semesta yang sama dengan Titanfall. Permainan ini dirilis untuk Microsoft Windows, PlayStation 4, dan Xbox One pada 4 Februari 2019</p>
+	</div>
+	
+	<div id="Left" class="w3-container kota w3-animate-left" style="display:none">
+		<h2>Genshin Impact</h2>
+		<img src='genshin.jpg'>
+		<p>Genshin Impact adalah permainan video yang dikembangkan dan diterbitkan oleh MiHoYo. Permainan ini dirilis pada tanggal 28 September 2020 di Android, iOS, Windows, dan PlayStation 4, serta 28 April 2021 di platform PlayStation 5. </p>
+	</div>
+	
+	<div id="Right" class="w3-container kota w3-animate-right" style="display:none">
+		<h2>Pubg</h2>
+		<img src='pubg.jpg'>
+		<p>PUBG: Battlegrounds (sebelumnya dikenal sebagai PlayerUnknown's Battlegrounds) adalah sebuah permainan battle royale, di mana 100 orang sekaligus dapat bermain secara daring. Pemenang dari permainan ini adalah individu atau tim yang dapat bertahan hingga akhir.</p>
+	</div>
+	
+	<div id="Opacity" class="w3-container kota w3-animate-opacity" style="display:none">
+		<h2>Efootball</h2>
+		<img src='e.jpg'>
+		<p>eFootball adalah permainan video simulasi sepak bola yang dikembangkan dan diterbitkan oleh Konami. Ini adalah permainan gratis untuk dimainkan setelah sepenuhnya diganti namanya dari seri Pro Evolution Soccer asli ke seri eFootball. Tahun pertama gim ini berjudul eFootball 2022 dirilis pada 30 September 2021. </p>
+	</div>
+
+	<div id="Zoom" class="w3-container kota w3-animate-zoom" style="display:none">
+		<h2>forza horizon</h2>
+		<img src='forza.jpg'>
+		<p>Forza Horizon 5 adalah gim video balap 2021 yang dikembangkan oleh Playground Games dan diterbitkan oleh Xbox Game Studios. Ini adalah judul Forza Horizon kelima dan angsuran utama kedua belas dalam seri Forza. Gim ini diatur dalam representasi fiksi Meksiko.</p>
+	</div>
+
+	<div id="Fading" class="w3-container kota w3-animate-fading" style="display:none">
+		<h2>GTA V</h2>
+		<img src='gta.jpg'>
+		<p>Grand Theft Auto V adalah permainan aksi-petualangan 2013 yang dikembangkan oleh Rockstar North dan diterbitkan oleh Rockstar Games. Ini adalah entri utama pertama dalam seri Grand Theft Auto sejak 2008 Grand Theft Auto IV</p>
+	</div>
+	
+	
+</body>
+</html>
